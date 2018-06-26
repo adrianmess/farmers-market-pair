@@ -1,8 +1,14 @@
 import React from 'react'
+// import SellingLocation from './SellingLocation'
+import LocationList from './LocationList'
+// import Month from './Month'
+// import MonthList from './MonthList'
 
 function Body(){
   return(
-    <h1>Farmer's Market Circuit</h1>
+    <div>
+      <LocationList/>
+    </div>
   )
 }
 

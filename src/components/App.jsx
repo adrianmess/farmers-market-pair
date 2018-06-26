@@ -1,5 +1,13 @@
 import React from 'react'
- function App(){
-   return(<p>hello</p>)
- }
- export default App
+import Header from './Header'
+import Body from './Body'
+
+function App(){
+  return(
+    <div>
+      <Header/>
+      <Body/>
+    </div>
+  )
+}
+export default App
