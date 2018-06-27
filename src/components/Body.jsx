@@ -1,6 +1,8 @@
 import React from 'react'
 import LocationList from './LocationList'
-import MonthList from './MonthList'
+
+import SelectionList from './SelectionList'
+
 
 
 
@@ -8,7 +10,7 @@ function Body(){
   return(
     <div>
       <LocationList/>
-      <MonthList/>
+      <SelectionList/>
 
     </div>
 

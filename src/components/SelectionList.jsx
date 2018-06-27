@@ -1,5 +1,6 @@
 import React from 'react'
-import Month from './Month'
+import Selection from './Selection'
+
 
 const availableProduce = [
   {
@@ -270,21 +271,20 @@ const availableProduce = [
   }
 ]
 
-function MonthList(){
+
+
+function SelectionList(){
   return (
     <div>
       <hr/>
-      {availableProduce.map((monthlist, index) =>
-        <Month month={monthlist.month}
-          key={index}
-          selection = {monthlist.selection.map((selection) =>
-            <li>{selection}</li>
-          )}
-          key = {index}/>
+      {availableProduce.map((produce, index) =>
+        <Selection selection={produce.selection} month={produce.month}
+          key={index} />
       )}
     </div>
+
 
   )
 }
 
-export default MonthList
+export default SelectionList

@@ -6,9 +6,7 @@ function Month(props){
   return(
     <div>
       <p>{props.month}</p>
-      <ul>
-        {props.selection}
-      </ul>
+      
       <hr/>
     </div>
   )
@@ -16,7 +14,6 @@ function Month(props){
 
 Month.propTypes = {
   month: PropTypes.string,
-  selection: PropTypes.array
 }
 
 export default Month
